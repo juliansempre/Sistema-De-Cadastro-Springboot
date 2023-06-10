@@ -1,0 +1,5 @@
+com\example\sistemaDeLogin\controller\CredenciaisLogin.class
+com\example\sistemaDeLogin\SistemaDeLoginApplication.class
+com\example\sistemaDeLogin\controller\Usuario.class
+com\example\sistemaDeLogin\Repository\UsuarioRepository.class
+com\example\sistemaDeLogin\controller\rotasDTO.class

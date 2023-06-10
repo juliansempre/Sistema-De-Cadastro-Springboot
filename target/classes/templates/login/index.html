@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Faça o seu Login</h1>
+        <form action="/logando" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+        <div class="register-container">
+            <p>Não tem cadastro? Clique aqui.</p>
+            <button onclick="window.location.href = '/FazerCadastro';">Cadastrar</button>
+        </div>
+        <div th:if="${mensagem != null}" class="alert alert-success" role="alert">
+            <span th:text="${mensagem}"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
