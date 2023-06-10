@@ -1,0 +1,25 @@
+package com.example.sistemaDeLogin.controller;
+
+public class CredenciaisLogin {
+
+    private String nome;
+    private String senha;
+    //getters e setters
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+}
